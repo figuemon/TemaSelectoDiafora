@@ -57,7 +57,7 @@
 
 %**** LANGUAGE PACKAGES *****
 
-
+\usepackage[spanish]{babel}
 
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
@@ -349,7 +349,7 @@
 
 % **** PLOTS PACKAGE ************
 \usepackage{pgfplots}
-
+\pgfplotsset{compat=1.16}
 \begin{document}
 %
 % paper title
@@ -431,11 +431,17 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
+  Se presenta un modelo de visualización alternativo para la comparación de taxonomías biológicas,
+  que busca fortalecer el avance logrado en el sistema Diaforá\cite{sancho_diafora}. Permitiendo a los taxónomos
+  enfocarse en aspectos importantes de los árboles de clasificación y manteniendo al mismo tiempo un mapa de la totalidad
+  de los árboles de taxonomía que están analizando.
+  Dicha propuesta pretende ser evaluada por un panel de expertos en taxonomía, para verificar la eficacia de esta extensión al sistema
+  Diaforá, de manera similar al análisis presentado en \cite{sancho-study}. 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-\LaTeX\xspace mobile systems, blockchain, power modeling.
+\LaTeX\xspace Visualización, Taxonomías biológicas, Diaforá, Enfoque y Contexto.
 \end{IEEEkeywords}
 
 
@@ -470,11 +476,66 @@
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-El problema descrito se deriva de la investigación realizada por los profesores Lilliana Sancho Chavarría y Erick Mata Montero, como parte  de su  investigación en la comparación y visualización de taxonomías biológicas [1].
-Las taxonomías biológicas son estructuras donde las especies son clasificadas de acuerdo a un sistema jerárquico propuesto por Linnaeus en el siglo 18[2], y que incluye las categorías de dominio, reino, filo o división, clase, orden, familia, género y especie.
-La información de todos los seres vivientes conocidos se agrupa en  árboles taxonómicos, que han sido creados y mantenidos por taxónomos a lo largo del mundo durante siglos. La reciente revolución digital ha permitido que gran parte de esa información pueda  ser compartida y revisada por expertos.  Debido a la naturaleza dinámica de estos datos es común que los taxónomos se enfrenten a distintas versiones de los datos que pueden ser corregidas y unificadas mediante la comparación de árboles taxonómicos. Las herramientas que ayuden a este grupo a analizar e identificar estas diferencias y facilitar el proceso de curación de las taxonomías permitiría un avance significativo en la calidad y fiabilidad de las clasificaciones biológicas de los seres vivos
+El problema descrito se deriva de la investigación realizada por los profesores Lilliana 
+Sancho Chavarría y Erick Mata Montero, como parte  de su  investigación en la comparación
+y visualización de taxonomías biológicas \cite{sancho_diafora}.
+Las taxonomías biológicas son estructuras donde las especies son clasificadas de
+ acuerdo a un sistema jerárquico propuesto por Linnaeus en el siglo 18\cite{linne},
+  y que incluye las categorías de dominio, reino, filo o división, clase, orden,
+   familia, género y especie.
+La información de todos los seres vivientes conocidos se agrupa en
+ árboles taxonómicos, que han sido creados y mantenidos por taxónomos a lo largo 
+ del mundo durante siglos. La reciente revolución digital ha permitido que gran parte 
+ de esa información pueda  ser compartida y revisada por expertos.  
+ Debido a la naturaleza dinámica de estos datos es común que los taxónomos se 
+ enfrenten a distintas versiones de los datos que pueden ser corregidas y unificadas
+  mediante la comparación de árboles taxonómicos. Las herramientas que ayuden a este 
+  grupo a analizar e identificar estas diferencias y facilitar el proceso de curación 
+  de las taxonomías permitiría un avance significativo en la calidad y fiabilidad de
+   las clasificaciones biológicas de los seres vivos.
 
 
+\section{Marco Teórico}
+
+Uno de los sentidos más importantes de los seres humanos es la visión. 
+Ésta es empleada para obtener la información visual del entorno, y en este caso específico la visualización se ha
+ convertido en un medio para ayudar a las personas de diversos campos a obtener información relevante sobre los datos. 
+ Sin embargo, dado a que el tamaño de los datos aumenta constantemente,
+  los enfoques de visualización tienen que resolver el problema de representaciones visuales 
+  exponenciales que dificultan la visualización de contenido relevante en una sola imagen de visualización\cite{tominski_gladisch_kister_dachselt_schumann_2016}.
+Algunos investigadores como C. Tominski han tratado de abordar el desafío de la visualización con enfoque a través de exploraciones con grandes volúmenes 
+de datos. Una de las técnicas para resolver los problemas de visualización son los lentes interactivos,
+ una clase de métodos que permiten la exploración de datos con múltiples facetas. 
+ Se busca con el uso de lentes interactivos una vista alternativa de los datos presentes en una área 
+ específica de la pantalla, con el fin de enfatizar parte de esta información de una manera más clara para los usuarios\cite{tominski_gladisch_kister_dachselt_schumann_2016}.
+Los datos estructurados en árboles son comunes en muchas disciplinas; este trabajo se enfocará 
+específicamente en las clasificaciones biológicas para la detección de diferencias y detalles relevantes 
+en una única pantalla, por ejemplo, los árboles filogenéticos que a diferencia de las categorizaciones 
+taxonómicas estudian las relaciones de parentesco entre las especies.
+Se han estudiado diferentes técnicas de visualización que permiten enfatizar las similitudes 
+y resaltar las diferencias existentes entre los árboles, como árboles de consenso y debido a que estos 
+árboles cuentan en promedio con más de 50 nodos es necesario la utilización de estrategias para ordenar 
+los árboles de manera automática entre estas se destacan la diferencia mínima de tripletas (MDT), y la
+ semejanza máxima de ramas (MBS). Estos algoritmos buscan maximizar el alineamiento de las hojas de los 
+ árboles en una comparación cara a cara\cite{inproceedings}.
+
+
+ \subsection{Lentes Interactivos}
+
+ Según la definición encontrada en \cite{tominski_gladisch_kister_dachselt_schumann_2016}, un lente interactivo es una herramienta ligera, que
+ intenta resolver un problema localizado de visualización, alterando temporalmente una parte seleccionada de la representación de los datos.
+
+ También siguiendo el trabajo de Tominski, se definen como propiedades importantes de los lentes interactivos:
+ \begin{itemize}
+   \item  \emph{Forma:} La forma del lente virtualmente no tiene restricción, sin embargo, es común que muchos sistemas intenten
+   emular el modelo de un lente del mundo real, en su mayoría circulares, no obstante esta forma puede adaptarse según la naturaleza de los datos
+   que se están explorando. La importancia radica en que el usuario pueda identificar el lente fácilmente y sobre cuales datos quiere que el lente
+   realice su función.
+   \item \emph{Posición y tamaño:} Se consideran atributos parametrizables, y que el usuario pueda ubicar el lente y ajustar su tamaño sobre
+   cualquier parte de los datos en el área de exploración.
+   \item \emph{Orientación:} Cuando se emplea el recurso de visualización en tres dimensiones, la orientación toma relevancia en la forma en la que 
+   se observan los datos, ya que dependiendo del ángulo de visión del punto de observación el modelo de datos presentado en pantalla puede variar.
+ \end{itemize}
 
 \section{Future Work}
 
