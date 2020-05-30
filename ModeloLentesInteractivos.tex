@@ -460,7 +460,7 @@
 \IEEEpeerreviewmaketitle
 
 
-\section{Definición del problema}
+\section{Introducción}
 % The very first letter is a 2 line initial drop letter followed
 % by the rest of the first word in caps.
 % 
@@ -493,9 +493,8 @@ La información de todos los seres vivientes conocidos se agrupa en
   grupo a analizar e identificar estas diferencias y facilitar el proceso de curación 
   de las taxonomías permitiría un avance significativo en la calidad y fiabilidad de
    las clasificaciones biológicas de los seres vivos.
-
-
-\section{Marco Teórico}
+\section{Trabajos relacionados}
+\section{Análisis del uso de lentes interactivos en taxonomías biológicas}
 
 Uno de los sentidos más importantes de los seres humanos es la visión. 
 Ésta es empleada para obtener la información visual del entorno, y en este caso específico la visualización se ha
@@ -557,11 +556,11 @@ Los taxones permiten clasificar a los seres vivos a partir de una jerarquía de 
 dominio, el reino, el filo o división, la clase, el orden, la familia, el género y la especie.
 
 
-\subsection{Diseño de visualización InterRing para el sistema taxonómico Diáfora}
+\section{Diseño de visualización InterRing para el sistema taxonómico Diáfora}
 Las técnicas conocidad como \emph{RSF} o \emph{Radial, space-filling} por sus siglas en inglés,
  tienen ciertas ventajas
 para la visualización de jerarquías, utilizan el espacio en pantalla de manera eficiente mientras que proveen una vista intuitiva 
-de la estructuras jerarquicas.
+de la estructuras jerárquicas.
 \begin{figure}[]
   \centering
   \includegraphics[scale=0.6]{interring}
@@ -570,7 +569,31 @@ de la estructuras jerarquicas.
 
 Haciendo uso de una visualización de tipo \emph{InterRing}\cite{yang_ward_rundensteiner}, que emplea
 el concepto de distorción circular extendemos la capacidad actual del sistema \emph{Diaforá} para mantener el contexto
-de la estructura jerarquica que esta siendo desplegada en el árbol taxonómico.
+de la estructura jerárquica que esta siendo desplegada en el árbol taxonómico.
+
+\section{Desarrollo del modelo de visualización en el sistema Diaforá}
+Según lo investigado en \cite{sancho_diafora}, el método \emph{edge drawing} puede comunicar de manera clara las
+diferencias entre dos versiones de una taxonomía. El uso de colores y líneas permite de manera clara detectar los
+cambios, además de que la interacción del usuario con la visualización permite enfocarse en aquellos cambios que 
+puedan llamar su atención.
+
+La principal desventaja detectada sobre el sistema de visualización \emph{edge drawing} consiste en la pérdida de contexto
+de la estructura jerárquica del árbol taxonómico debido a la gran cantidad de nodos presentes una taxonomía.
+El propósito de utilizar una visualización \emph{InterRing}\cite{yang_ward_rundensteiner} secundaria pretende apoyar al usuario a conocer
+el ámbito local del árbol taxonómico presentando de manera gráfica parte de la jeraquía circundante que puede no ser visible debido a la cantidad de datos
+y que para poder visualizarlos requiere que el usuario haga \emph{scroll} sobre la gráfica \emph{edge drawing}.
+\end{figure}
+\begin{figure}[]
+  \centering
+  \includegraphics[scale=0.3]{extend_diafora.png}
+  \caption{Sistema Diaforá en conjunto con visualización InterRing.}
+  \label{}
+\end{figure}
+
+El uso del método InterRing permite de manera compacta y simple renderizar una gran cantidad de nodos y permite al usuario navegar sobre las ramas 
+del árbol taxonómico y explorar su composición, también al estar sincronizadas ambas gráficas se pueden realizar comparaciónes 
+visuales sobre las imágenes resultantes de las visualizaciones InterRing que destacan las mayores diferencias entre distintas versiones de una taxonomía biológica.
+\section{Validación del modelo propuesto}
 
 \section{Trabajo Futuro}
 
