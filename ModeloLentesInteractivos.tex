@@ -373,7 +373,7 @@
 \author{Manuel Figueroa,\IEEEmembership{ ITCR,}
         Nathalia Gonzalez,\IEEEmembership{ ITCR,}
         Esteban Leandro,\IEEEmembership{ ITCR}}% <-this % stops a space
-\affil[]{\textit{MC-7201 Introduction to Research}}
+\affil[]{\textit{MC-7205 Tema Selecto de Investigación}}
 \affil[]{\textit{Instituto Tecnológico de Costa Rica}}
 \affil[]{\textit{\{mfigueroacr, natgondu, elc790\}@gmail.com}}
 
@@ -398,7 +398,7 @@
 
 
 % The paper headers
-\markboth{Curso Tema Selecto,ITCR: Maestría en Computación, I Semestre ~2020}%
+\markboth{Curso Tema Selecto, ITCR: Maestría en Computación, I Semestre ~2020}%
 {Shell \MakeLowercase{\textit{et al.}}: Modelo de lentes interactivos para la visualización y comparación de taxonomías biológicas. }
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
@@ -615,12 +615,44 @@ Como detalles del modelo propuesto en la extensión del sistema Diaforá podemos
   \item \textbf{Etiquetas interactivas:} Utilizando el control \emph{Lens} se incluyen etiquetas interactivas que permiten saber cuantas diferencias y de que tipo existen
   en cada uno de los niveles del árbol taxonómico.
 \end{itemize}
+
 \section{Validación del modelo propuesto}
+En esta sección se muestran una serie de evaluaciones que realizaron distintas personas para validar que el modelo de visualización propuesto cumple con los requisitos para que los taxónomos tengan una visualización más adecuada de las taxonomías a la ya existente.
+\newline
+\begin{itemize}
+  \item \textbf{Evaluador 1:} Agregar datos aquí.
+  \item \textbf{Evaluador 2:} Agregar datos aquí.
+  \item \textbf{Evaluador 3:} Agregar datos aquí.\\
+\end{itemize}
 
 \section{Trabajo Futuro}
 
+Para un departamento de IT el concepto de aprovisionar de forma manual o automatizada una infraestructura para un sistema de cómputo \cite{aut-cloud-prov}, termina siendo el conjunto de tareas que tratan en preparar un conjunto de servidores, así como software adicional, configuración de redes, seguridad a la misma y demás, con el fin de ejecutar dentro de ellos aplicaciones de software que realizan distintas tareas, cumpliendo con los múltiples requerimientos dentro de una lógica de negocio.
+
+Tendencias e implementaciones en el campo del aprovisionamiento de infraestructura para sistemas de software ha tomado un giro importante, donde cada vez se le brinda al usuario un mayor aprovisionamiento y menor responsabilidad de la configuración del hardware, el uso de máquinas virtuales \cite{virt-machines} es cosa diaria respecto al lugar donde se ejecutan las aplicaciones, dando paso a procesos de automatización de infraestructura, que quitan aún más la responsabilidad al usuario de preocuparse por temas de hardware.
+
+Modelos recientes sobre infraestructura como código (IaC) \cite{artac-iac} son muy utilizados en aplicaciones en la nube \cite{morris-iac}, donde por medio mayormente de archivos con extensión .yaml, se describen un conjunto de árboles de configuración, las cuales después por medio de herramientas de automatización, se ejecutan todas las tareas deseadas. Desarrollar infraestructura como código \cite{guerr-iac}, \cite{huttermann-iac}, permite la idempotencia en una arquitectura e infraestructura, lo cuál es una enorme ventaja respecto a configuraciones manuales.
+
+Herramientas para Iac como Terraform o Ansible \cite{terraf-ansib} realizan tareas automatizadas para aprovisionar infraestructura y desplegar aplicaciones en dicha infraestructura. Como resultado del aprovisionamiento, Terraform en el fondo utiliza la Teoría de Grafos \cite{Aldous-graphs}, \cite{Kamada-graphs} para definir y mantener dicha especificación en código de la infraestructura en tiempo real. 
+
+Existe una configuración en archivos .yaml que define un estado $deseado$ de la infraestructura, Terraform monitorea en tiempo real cual es el estado $actual$ de y realiza por medio de reducción transitiva una diferencia de grafos, con el fin de comparar y saber si existe una mínima diferencia entre dichos estados ($deseado, actual$) y en caso de existir, realizar a cabo una serie de procesos automatizados que ponen de nuevo el estado actual a como se desea que esté la infraestructura en todo momento.
+
+Un ejemplo de esta diferencia de grafos en Terraform junto con el proceso de recuperación, podría ser tener una definición inicial deseada con 5 servidores corriendo en todo momento, si en algún momento un servidor se cae, Terraform va a realizar la comparación entre el estado $deseado$ de la infraestructura (5 servidores) y el estado $actual$ (4 servidores al estar 1 servidor caído) y va a levantar una instancia para volver a tener el estado actual igual al estado deseado.
+
+Una propuesta para continuar con esta investigación sobre visualizaciones para taxonomías biológicas y una posible implementación de dicho modelo, más allá de un prototipo, va muy de la mano con todas estas tendencias de IaC, aplicando un enfoque similar al de la teoría de grafos para comparación de árboles taxonómicos.
+
+Se propone diseñar otra vista para el taxónomo, donde no va a visualizar todo el despliegue de cada árbol en un año distinto, sino que se podría almacenar en un árbol el contenido del $phylum$ del año inicial de la comparación y en otro árbol distinto el contenido del $phylum$ para el siguiente año que se esté comparando. Posterior a eso se puede llevar a cabo una diferencia de árboles y guardar dicha diferencia en un tercer árbol, el cual va a servir para visualizar únicamente los cambios que han surgido en el $phylum$ en los años que esté comparando. 
+
+Dicho árbol posiblemente contenga considerablemente menos información que cualquiera de los árboles previos, al menos que se estén comparando las mismas especies con una diferencia muy marcada de años. De esta manera, se puede contar con la pantalla de visualización actual junto con los InterRing y a la vez con una segunda pantalla donde se muestre la diferencia o los cambios que han habido entre los años, sin mostrar lo que no haya cambiado.
+
+Dicha pantalla podría constar de datos que representen los cambios que hubieron, puede representarse como un único árbol y a la vez se pueden agregar gráficos de InterRing para visualizar la información de una manera distinta. 
 
 \section{Conclusiones}
+Después de analizar distintos modelos para visualizar grandes cantidad de información, es recomendable tener más de una forma de visualizar las taxonomías, contar únicamente con dos árboles donde cada uno representa un $phylum$ de la misma especie en distinto año y cada uno de estos árboles se despliega hasta el fondo del mismo, no es la manera más sencilla de comparar una especie de un año a otro, sin embargo es útil para que el taxónomo no pierda el contexto de lo que está viendo. 
+
+Un enfoque que a manera de validación del modelo propuesto nos ha dado valor, es el hecho de utilizar más de un tipo de visualización, donde se tiene la visualización actual con el desglose total del $phylum$ en distintos períodos, una visualización de InterRing que permite tener de entrada una comparación más abstracta donde más rápidamente podemos ver si han habido cambios, a esto uniéndole la diferencia de grafos de árboles, el taxónomo no depende de una única pantalla para realizar comparaciones, sino que puede optar con distintas pestañas que pueden reducir las comparaciones.
+
+
 
 %\section{Conclusion}
 %The conclusion goes here.
