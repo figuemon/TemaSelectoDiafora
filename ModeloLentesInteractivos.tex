@@ -349,6 +349,7 @@
 
 % **** PLOTS PACKAGE ************
 \usepackage{pgfplots}
+\usepackage{float}
 \pgfplotsset{compat=1.16}
 \begin{document}
 %
@@ -614,7 +615,7 @@ visuales sobre las imágenes resultantes de las visualizaciones InterRing que de
   \label{}
 \end{figure}
 
-Como se puede observar en la figura 5, es posible detectar diferencias entre las figuras que representan una misma clase (\emph{Clitellata})
+Como se puede observar en la figura 3, es posible detectar diferencias entre las figuras que representan una misma clase (\emph{Clitellata})
 mediante las variaciones existentes en ambas figuras, de esta manera se espera poder contribuir con el trabajo de refinamiento de las taxonomías al 
 resaltar y hacer más evidentes las diferencias entre versiones de una taxonomía.
 
@@ -629,6 +630,31 @@ Como detalles del modelo propuesto en la extensión del sistema Diaforá podemos
   en cada uno de los niveles del árbol taxonómico.
 \end{itemize}
 
+\subsection{Caso de Uso: \emph{Orden: Haplotaxida}}
+Utilizando el sistema \emph{Diaforá} para analizar el órden taxonómico \emph{Haplotaxida} correspondiente al filo \emph{Annelida} \cite{nguyen_nguyen_tran_blakemore_2016}.
+En la figura 4 podemos apreciar la comparación entre la versión de la taxonomía del año 2012 y la versión de la taxonomía de 2019 del Catalogue of Life \cite{catalogueoflife}.
+\begin{figure*}[]
+  \centering
+  \includegraphics{useCaseHaplotaxida.png}
+  \caption{Caso de uso: Orden Haplotaxida}
+  \label{}
+\end{figure*}
+
+Como es posible apreciar en el resumen de las etiquetas interactivas el órden \emph{Haplotaxida} tiene al menos 175 \emph{splits} o divisiones de los taxones del grupo.
+Y eso se refleja adecuadamente en las diferencias de la gráfica \emph{InterRing} en la parte inferior del área de comparación.
+
+
+Es importante destacar, la sincronía existente entre las gráficas \emph{InterRing} y el árbol taxonómico con \emph{edge drawing}, por lo que cuando el usuario 
+selecciona un nodo en alguna de las dos visualizaciones se refleja en la otra para tener en todo momento el contexto del sub-árbol que esta siendo sujeto de comparación.
+
+
+\subsection{Posibles extensiones a futuro del sistema \emph{Diaforá}}
+
+Se recomienda como posibles temas de extensión al sistema, la posibilidad de incoporar la edición 
+de las taxonomías biológicas en el sistema, así como la incorporación de un módulo de análisis de diferencias
+que incluya el resumen de los cambios y un conjunto alternativo de visualizaciones incluyendo una visualización matricial
+de los datos.
+
 \subsection{Detalles del desarrollo de la herramienta}
 El desarrollo al que hace referencia este documento es una extensión del sistema \emph{Diaforá}\cite{sancho_diafora}.
 El sistema original esta desarrollado como una aplicación web, 
@@ -638,6 +664,12 @@ interactivas están desarrolladas haciendo uso de la librería Data Driven Docum
 
 Al ser una aplicación web, se permite un fácil acceso y disponibilidad para el uso de los taxónomos y se admite el 
 mismo formato de árbol taxonómico que en la versión previa del sistema \emph{Diaforá}.
+
+La aplicación se encuentra publicada en el url: \underline{https://diafora2.herokuapp.com/} donde se puede acceder y probar las extensiones
+mencionadas al sistema \cite{Diaforá}.
+
+Los archivos que contienen las taxonomías siguen el formato original de la primera versión del sistema \cite{sancho_diafora}.
+
 
 \section{Validación del modelo propuesto}
 En esta sección se muestran una serie de evaluaciones que realizaron distintas personas para validar que el modelo de 
