@@ -583,7 +583,13 @@ de la estructuras jerárquicas.
 
 Haciendo uso de una visualización de tipo \emph{InterRing}\cite{yang_ward_rundensteiner}, que emplea
 el concepto de distorción circular extendemos la capacidad actual del sistema \emph{Diaforá} para mantener el contexto
-de la estructura jerárquica que esta siendo desplegada en el árbol taxonómico.
+de la estructura jerárquica que esta siendo desplegada en el árbol taxonómico. De esta manera se proporciona la capacidad de mover elementos de la interfaz libremente, permitiendo a los usuarios imponer su propia organización en los elementos taxonómicos, ayudando a los colaboradores a crear y mantener modelos mentales de un conjunto de datos que contiene variaciones a través de los años. 
+Al mover libremente el árbol taxonómico, los usuarios del sistema pueden imponer sus propias categorizaciones, evitando que se dé una recuperación tardía de los elementos o datos específicos. Por ejemplo, relacionar una versión del 2010 con otro árbol del 2012 podría requerir una búsqueda exhaustiva para localizar el cambio respectivo en la otra representación. 
+
+Implementando InterRing logramos resaltar datos en representaciones taxonómicas, ayudando a las personas cuando cambian entre datos grupales como especie, género o familias y más paralelo como las clases o el filo. 
+
+El sistema Diáfora proporcionará un acceso amigable al historial de cambio de datos. A medida que los miembros de las especies cambian se evita perder el rastro de las interacciones de sus colaboradores. Además, las tareas de análisis de la información requieren de poca manipulación de widgets y diálogos de interfaz facilitando la comprensión de los datos. 
+La nueva visualización de trabajo en el sistema Diáfora es individual, lo cual facilita que múltiples usuarios puedan tener acceso a distintas versiones de un árbol y trabajar de manera local. Logrando evitar que, si un miembro del área desea eliminar o modificar familias, los datos del resto de usuarios no se vea afectados.
 
 \section{Desarrollo del modelo de visualización en el sistema Diaforá}
 Según lo investigado en \cite{sancho_diafora}, el método \emph{edge drawing} puede comunicar de manera clara las
