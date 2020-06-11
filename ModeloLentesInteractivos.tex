@@ -435,14 +435,15 @@
   Se presenta un modelo de visualización alternativo para la comparación de taxonomías biológicas,
   que busca fortalecer el avance logrado en el sistema Diaforá\cite{sancho_diafora}. Permitiendo a los taxónomos
   enfocarse en aspectos importantes de los árboles de clasificación y manteniendo al mismo tiempo un mapa de la totalidad
-  de los árboles de taxonomía que están analizando.
+  de los árboles de taxonomía que están analizando. 
+  A la vez, se realiza un análisis comparativo entre modelos de visualización con técnicas actuales de desarrollo de infraestructura para generar nuevos árboles o grafos con diferencias para una visualización de datos menos detallada que pueda perder al taxónomo de contexto, esto para una posible extensión del modelo presentado.
   Dicha propuesta pretende ser evaluada por un panel de expertos en taxonomía, para verificar la eficacia de esta extensión al sistema
   Diaforá, de manera similar al análisis presentado en \cite{sancho-study}. 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-\LaTeX\xspace Visualización, Taxonomías biológicas, Diaforá, Enfoque y Contexto.
+Visualización, Taxonomías biológicas, Diaforá, Enfoque y Contexto.
 \end{IEEEkeywords}
 
 
@@ -494,12 +495,14 @@ La información de todos los seres vivientes conocidos se agrupa en
   grupo a analizar e identificar estas diferencias y facilitar el proceso de curación 
   de las taxonomías permitiría un avance significativo en la calidad y fiabilidad de
    las clasificaciones biológicas de los seres vivos.
+   
+Cuando se busca una comparación de datos masiva como lo son las distintas taxonomías, se pueden encontrar múltiples formas de visualizar la información con distintas implementaciones gráficas, sin embargo no todas son útiles. Uno de los retos presentados  fue investigar formas para visualizar las grandes taxonomías que permitieran mantener la coherencia de dichos datos y a la vez presentar al taxónomo una herramienta útil con la cual poder realizar comparaciones sin que le tome mucho tiempo.
 
    %================== TRABAJOS RELACIONADOS
 
    \section{Trabajos relacionados}
-El problema de comparar grandes colecciones de datos es una necesidad común en el campo de la análitica visual \cite{gleicher_2018}, donde se identifica
-que a mayor escala se tienen como límite la capacidad cognitiva y perceptiva del usuario.  Para solventar el problema de la escala se sugiere considerar como estrategías para el usuario:
+El problema de comparar grandes colecciones de datos es una necesidad común en el campo de la analítica visual \cite{gleicher_2018}, donde se identifica
+que a mayor escala se tienen como límite la capacidad cognitiva y perceptiva del usuario.  Para solventar el problema de la escala se sugiere considerar como estrategias para el usuario:
 \begin{itemize}
   \item \textbf{Escanear secuencialmente:} el usuario puede examinar los objetos de manera secuencial.
   \item \textbf{Seleccionar un grupo:} el usuario analiza un grupo más pequeño de datos.
@@ -507,6 +510,12 @@ que a mayor escala se tienen como límite la capacidad cognitiva y perceptiva de
 \end{itemize}
 Los trabajos relacionados en comparación de jerarquías de datos biológicos se centran en el estudio de árboles filogenéticos y taxonomías
 biológicas.
+
+Un enfoque mencionado en \cite{visual-focus} es utilizar navegadores de árboles hiperbólicos, podría tenerse en un árbol el detalle de un phylum y en cada conjunto de ramas cada una de las subespecies, sin embargo no es muy útil a la hora de querer comparar una taxonomía de un año específico con la misma taxonomía de otro año, ya que se terminaría teniendo dos árboles con ramas bastante grandes y no brindaría ningún beneficio respecto al modelo actual de visualización, a la vez que ubicar dos árboles tan grandes en una sola pantalla no seria conveniente. Utilizando este método con dos árboles donde uno se sobrepone al otro (un phylum del 2010 por ejemplo y el mismo phylum en el 2012) podría dar una visualización de las taxonomías más apropiada, ya que de esta forma de entrada se podría visualizar algún cambio en las ramas de los árboles al notarse que no son iguales, o por el contrario notar que no han habido cambios pronunciados en otras ramas.
+
+Otro modelo de visualización para grandes cantidades de información, es tener un lente sobre una cuadrícula con puntos distribuidos que representen concentraciones de datos \cite{lens-visual}, esta técnica representa un modelo muy útil cuando se trate de profundizar en una única taxonomía de un año específico, sin embargo a la hora de realizar una comparación con otro año, el lente podría ser confuso a la hora de sacar diferencias entre subespecies.
+
+En \cite{graph-explore} se puede observar un modelo de visualización con grafos de exploración, dicho modelo utiliza colores y distintas aristas para representar la información, a la vez cuenta con una serie de puntos de interconexión entre los puntos mostrados, este modelo tiene cierta similitud al modelo propuesto, sin embargo dependiendo de la cantidad de subespecies para una especie, podría ser confuso o utilizar tantos colores que lleguen a quitar el enfoque en las comparaciones taxonómicas, dichos puntos al estar cerca unos de otros pueden llegar a distorsionar una rama, también sobreponer un grafo sobre otro eliminaría la comprensión de lo que se puede buscar, que es comparar sin invertir mucho tiempo, una especie con la misma en distinto período.
 
 \section{Análisis del uso de lentes interactivos en taxonomías biológicas}
 
@@ -552,7 +561,7 @@ los árboles de manera automática entre estas se destacan la diferencia mínima
 
  \subsection{Lentes Interactivos para Visualización}
  Las técnicas de lentes son herramientas que nos permiten enfocarnos temporalmente en un punto de interes, un lente es una selección 
- de una visualización base donde se buscan localizar un punto especifico y una vez que se llega al punto de interes
+ de una visualización base donde se buscan localizar un punto especifico y una vez que se llega al punto de interés
  la visualización vuelve a su estado original. La selección captura lo que debe ser resaltado por un lente. 
  Normalmente el usuario controla la selección a través de movimientos sobre la representación visual de los datos. 
  
@@ -717,6 +726,10 @@ Dicha pantalla podría constar de datos que representen los cambios que hubieron
 Después de analizar distintos modelos para visualizar grandes cantidad de información, es recomendable tener más de una forma de visualizar las taxonomías, contar únicamente con dos árboles donde cada uno representa un $phylum$ de la misma especie en distinto año y cada uno de estos árboles se despliega hasta el fondo del mismo, no es la manera más sencilla de comparar una especie de un año a otro, sin embargo es útil para que el taxónomo no pierda el contexto de lo que está viendo. 
 
 Un enfoque que a manera de validación del modelo propuesto nos ha dado valor, es el hecho de utilizar más de un tipo de visualización, donde se tiene la visualización actual con el desglose total del $phylum$ en distintos períodos, una visualización de InterRing que permite tener de entrada una comparación más abstracta donde más rápidamente podemos ver si han habido cambios, a esto uniéndole la diferencia de grafos de árboles, el taxónomo no depende de una única pantalla para realizar comparaciones, sino que puede optar con distintas pestañas que pueden reducir las comparaciones.
+
+A pesar de no contar con una implementación del software completa en totalidad y pruebas exhaustivas de la misma, creemos que el modelo propuesto junto con el trabajo a futuro mencionado, pueden brindar al taxónomo múltiples puntos de vista, útiles para tomar decisiones u observaciones. 
+
+Según se puede observar en modelos de grafos \cite{graph-explore} y de lentes \cite{lens-visual} cuando se trata de comparar información, el modelo de InterRing es más apto, ya que permite en menos tiempo poder darse cuenta si hay cambios drásticos, normalmente el taxónomo no va a comparar todo el árbol completo múltiples veces al día, sin embargo el modelo InterRing le permite comparar la subespecie en distinto período y si necesita más información abrir cada una de las subramas.
 
 Además, de distintos modelos estudiados durante la investigación de modelos de visualización, cuando se trata de grandes cantidades de datos los que queremos ver en una pantalla, el modelo InterRing es de los más utilizados, dando de entrada una visualización donde se le permite al taxónomo ver si existen diferencias sin entrar en detalle.
 
