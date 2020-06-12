@@ -644,10 +644,10 @@ visuales sobre las imágenes resultantes de las visualizaciones InterRing que de
   \centering
   \includegraphics[]{interringCompare.png}
   \caption{Comparación de dos clases usando la visualización InterRing}
-  \label{}
+  \label{class_compare}
 \end{figure}
 
-Como se puede observar en la figura 3, es posible detectar diferencias entre las figuras que representan una misma clase (\emph{Clitellata})
+Como se puede observar en la figura \ref{class_compare}, es posible detectar diferencias entre las figuras que representan una misma clase (\emph{Clitellata})
 mediante las variaciones existentes en ambas figuras, de esta manera se espera poder contribuir con el trabajo de refinamiento de las taxonomías al 
 resaltar y hacer más evidentes las diferencias entre versiones de una taxonomía.
 
@@ -664,12 +664,12 @@ Como detalles del modelo propuesto en la extensión del sistema Diaforá podemos
 
 \subsection{Caso de Uso: \emph{Orden: Haplotaxida}}
 Utilizando el sistema \emph{Diaforá} para analizar el órden taxonómico \emph{Haplotaxida} correspondiente al filo \emph{Annelida} \cite{nguyen_nguyen_tran_blakemore_2016}.
-En la figura 4 podemos apreciar la comparación entre la versión de la taxonomía del año 2012 y la versión de la taxonomía de 2019 del Catalogue of Life \cite{catalogueoflife}.
+En la figura \ref{haplotaxida} podemos apreciar la comparación entre la versión de la taxonomía del año 2012 y la versión de la taxonomía de 2019 del Catalogue of Life \cite{catalogueoflife}.
 \begin{figure*}[]
   \centering
   \includegraphics[scale=1.5]{useCaseHaplotaxida.png}
   \caption{Caso de uso: Orden Haplotaxida}
-  \label{}
+  \label{haplotaxida}
 \end{figure*}
 
 Como es posible apreciar en el resumen de las etiquetas interactivas el órden \emph{Haplotaxida} tiene al menos 175 \emph{splits} o divisiones de los taxones del grupo.
@@ -679,7 +679,15 @@ Y eso se refleja adecuadamente en las diferencias de la gráfica \emph{InterRing
 Es importante destacar, la sincronía existente entre las gráficas \emph{InterRing} y el árbol taxonómico con \emph{edge drawing}, por lo que cuando el usuario 
 selecciona un nodo en alguna de las dos visualizaciones se refleja en la otra para tener en todo momento el contexto del sub-árbol que esta siendo sujeto de comparación.
 
+Si el usuario sigue explorando el órden \emph{Haplotaxida} y compara una de las familias existentes en este órden, como por ejemplo la familia \emph{Sparganophilidae
+} se puede apreciar en la gráfica \emph{InterRing} (figura \ref{sparg_fam})que existen bastantes diferencias para este grupo taxonómico en las versiones de la taxonomía \emph{Annelida} del año 2012 y 2019 respectivamente.
 
+\begin{figure}[]
+  \centering
+  \includegraphics[scale=2.3]{Sparganophilidae_interring.png}
+  \caption{Comparativa familia \emph{Sparganophilidae}. Izquierda versión 2012, derecha versión 2019.}
+  \label{sparg_fam}
+\end{figure}
 \subsection{Posibles extensiones a futuro del sistema \emph{Diaforá}}
 
 Se recomienda como posibles temas de extensión al sistema, la posibilidad de incoporar la edición 
