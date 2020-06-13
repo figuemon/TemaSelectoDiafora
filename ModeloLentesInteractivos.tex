@@ -478,7 +478,7 @@ Visualización, Taxonomías biológicas, Diaforá, Enfoque y Contexto.
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-El problema descrito se deriva de la investigación realizada por los profesores Lilliana 
+El problema descrito se deriva del trabajo realizado por los profesores Lilliana 
 Sancho Chavarría y Erick Mata Montero del ITCR, como parte  de su  investigación en la comparación
 y visualización de taxonomías biológicas \cite{sancho_diafora}.
 Las taxonomías biológicas son estructuras donde las especies son clasificadas de
@@ -756,6 +756,27 @@ Se propone diseñar otra vista para el taxónomo, donde no va a visualizar todo 
 Dicho árbol posiblemente contenga considerablemente menos información que cualquiera de los árboles previos, al menos que se estén comparando las mismas especies con una diferencia muy marcada de años. De esta manera, se puede contar con la pantalla de visualización actual junto con los InterRing y a la vez con una segunda pantalla donde se muestre la diferencia o los cambios que han habido entre los años, sin mostrar lo que no haya cambiado.
 
 Dicha pantalla podría constar de datos que representen los cambios que hubieron, puede representarse como un único árbol y a la vez se pueden agregar gráficos de InterRing para visualizar la información de una manera distinta. 
+\section {Discusión}
+El análisis taxonómico requiere de la visualización de grandes cantidades de datos correspondientes a las clasificaciones biológicas de los seres vivos, organizadas en el sistema 
+propuesto por \emph{Carl Linnaeus} durante el siglo \emph{XVIII} \cite{linne}.
+Este anális de los seres vivos  ha sido desarrollado por diferentes entidades y biólogos a lo largo del mundo, muchas veces recopilando información sobre las mismas especies
+y clasificandolas según su criterio, por lo que se ha encontrado con el problema de inconsistencias en las taxonomías biológicas que han sido creadas por 
+diferentes científicos a lo largo de la historia \cite{avise_liu_2011}.
+Como parte de la investigación previa a este trabajo se determinó que una parte importante de la labor de los taxonómos actuales es la curación y refinamiento de las taxonomías existentes
+definiendo y corrigiendo los cambios haciendo divisiones, unificaciones, eliminando o agregando taxones a las clasificaciones ya existentes.
+El sistema Diaforá \cite{sancho_diafora} permite a los taxónomos contar con una herramienta  de visualización de datos que les permite comparar distintas versiones taxonómicas que han sido creadas y modificadas en el tiempo.
+
+Uno de las principales problemáticas de la solución presentada en el sistema Diaforá, consistía en que debido a la magnitud de los datos se pierde el contexto del área taxonómica que se está comparando, por lo que es necesario encontrar
+una manera de apoyar la visualización con una herramienta que permita explorar el entorno del árbol taxonómico.
+
+El sistema propuesto \emph{InterRing} \cite{yang_ward_rundensteiner}, permite condensar una gran cantidad de información en un área visualmente pequeña por lo que permite
+proveer al usuario de la información que corresponde a la sub-área taxonómica en la que está trabajando y poder navegar más fácilmente.
+
+Adicionalmente, se determina que la incorporación de las gráficas \emph{InterRing} en el sistema permiten una comparación visual inmediata de diferencias marcadas en secciones del árbol.
+Por lo que es sencillo determinar si se han incorporado nuevos nodos a alguna de las taxonomías.
+
+El sistema Diaforá como herramienta de apoyo visual en el refinamiento de taxonomías biológias ayuda a mejorar el análisis de diferencias en grandes colecciones de datos, uno de los grandes 
+retos de la labor de los taxónomos.
 
 \section{Conclusiones}
 Después de analizar distintos modelos para visualizar grandes cantidad de información, es recomendable tener más de una forma de visualizar las taxonomías, contar únicamente con dos árboles donde cada uno representa un $phylum$ de la misma especie en distinto año y cada uno de estos árboles se despliega hasta el fondo del mismo, no es la manera más sencilla de comparar una especie de un año a otro, sin embargo es útil para que el taxónomo no pierda el contexto de lo que está viendo. 
