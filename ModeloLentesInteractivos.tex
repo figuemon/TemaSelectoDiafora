@@ -615,6 +615,16 @@ de la estructuras jerárquicas.
   \caption{Ejemplo de visualización RSF. Tomado  de \cite{yang_ward_rundensteiner}}
 \end{figure}
 
+Es por esta razón que hemos optado por implementar un diseño de árbol radial [26] para representar los datos jerárquicos y debido a que la comparación de árboles es una tarea común realizada en árboles filogenéticos se podrá ver como todos los nodos de hoja o superiores se extienden hasta la parte inferior del gráfico, 
+los nodos se colorean de acuerdo a su nivel facilitando que se pueda reorientar y reposicionar libremente. 
+
+
+\begin{itemize}
+  \item \textbf{Árbol radial:} En un diagrama, donde las ideas son expuestas de una manera ordenada y sistemática permitiendo mostrar las relaciones entre ellas. 
+  El objetivo es inducir a construir estructuras mentales identificando ideas principales e ideas subordinadas según el orden lógico. Biólogo Greg Book.
+\end{itemize}
+
+
 Haciendo uso de una visualización de tipo \emph{InterRing}\cite{yang_ward_rundensteiner}, que emplea
 el concepto de distorción circular extendemos la capacidad actual del sistema \emph{Diaforá} para mantener el contexto
 de la estructura jerárquica que esta siendo desplegada en el árbol taxonómico. De esta manera se proporciona la capacidad de mover elementos de la interfaz libremente, permitiendo a los usuarios imponer su propia organización en los elementos taxonómicos, ayudando a los colaboradores a crear y mantener modelos mentales de un conjunto de datos que contiene variaciones a través de los años. 
@@ -624,6 +634,9 @@ Implementando InterRing logramos resaltar datos en representaciones taxonómicas
 
 El sistema Diáfora proporcionará un acceso amigable al historial de cambio de datos. A medida que los miembros de las especies cambian se evita perder el rastro de las interacciones de sus colaboradores. Además, las tareas de análisis de la información requieren de poca manipulación de widgets y diálogos de interfaz facilitando la comprensión de los datos. 
 La nueva visualización de trabajo en el sistema Diáfora es individual, lo cual facilita que múltiples usuarios puedan tener acceso a distintas versiones de un árbol y trabajar de manera local. Logrando evitar que, si un miembro del área desea eliminar o modificar familias, los datos del resto de usuarios no se vea afectados.
+
+
+
 
 \section{Desarrollo del modelo de visualización en el sistema Diaforá}
 Según lo investigado en \cite{sancho_diafora}, el método \emph{edge drawing} puede comunicar de manera clara las
