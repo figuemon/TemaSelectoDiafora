@@ -346,6 +346,14 @@
 
 % Paquete para utilizar colores
 \usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=black
+}
 
 % **** PLOTS PACKAGE ************
 \usepackage{pgfplots}
@@ -705,8 +713,8 @@ interactivas están desarrolladas haciendo uso de la librería Data Driven Docum
 Al ser una aplicación web, se permite un fácil acceso y disponibilidad para el uso de los taxónomos y se admite el 
 mismo formato de árbol taxonómico que en la versión previa del sistema \emph{Diaforá}.
 
-La aplicación se encuentra publicada en el url: \underline{https://diafora2.herokuapp.com/} donde se puede acceder y probar las extensiones
-mencionadas al sistema \cite{Diaforá}.
+La aplicación se encuentra publicada en el url: \url{https://diafora2.herokuapp.com/} donde se puede acceder y probar las extensiones
+mencionadas al sistema \emph{Diaforá}.
 
 Los archivos que contienen las taxonomías siguen el formato original de la primera versión del sistema \cite{sancho_diafora}. \\
 
@@ -762,13 +770,13 @@ Segundo modelo propuesto: "Comparación estadística de múltiples períodos de 
   \centering
   \includegraphics[]{interringCompare.png}
   \caption{Modelo conceptual para una propuesta de comparaciones estadísticas utilizando múltiples períodos de un mismo phylum.}
-  \label{class_compare}
+  \label{mockup}
 \end{figure}
 Otra propuesta para un posible trabajo a futuro o un añadido al presente modelo, es implementar otra pantalla en el software taxonómicos donde el taxónomo pueda realizar comparaciones a nivel del mismo phylum pero en más de dos años, por ejemplo introducir los dataset del phylum para el año 2010, 2012, 2015 y 2019 para posteriormente en una nueva visualización detectar cuáles han sido los cambios más pronunciados. Dicha visualización no sería representada a nivel de árbol como la presente, sino que sería más una representación estadística. Se podría introducir las taxonomías deseadas y dicho modelo podría iterar sobre cada árbol y presentar por ejemplo cuál es el año en donde se presentaron más eliminaciones de especies, cuál fue el o los años en donde se agregaron más especies a una subespecie del phylum, también cuáles fueron los años en donde menos cambios a nivel de agregación y eliminación hubieron. 
 
 Si bien es muy útil visualizar más información que la mencionada en esta segunda propuesta a trabajo a futuro, también es importante que el taxónomo no tenga una única forma de visualizar los datos, entre más perspectivas tenga, puede ser más útil y la toma de decisiones puede tomar menos tiempo. Esta idea surge como una propuesta donde el taxónomo quiera tener una especie de resumen que vaya más allá que sólo dos períodos, sino que pueda ir más allá.
 
-En la Figura #, se presenta un mockup o estilo conceptual respecto a esta última propuesta para trabajo a futuro, donde se puede tener un espacio de visualización estadístico sin incluir todas las subespecies o subcategorías del phylum. Dicha pantalla podría incluirse a modo de pestaña en el UI general de la aplicación, permitiendo al taxónomo mantener la pestaña inicial con la comparación entre los dos árboles (modelo actual junto con los gráficos de InterRing) y añadir una segunda o tercer pestaña en donde se pueda hacer el importe de los distintos datasets para cada periodo del mismo phylum y visualizar a nivel estadístico cual o cuales son los años en donde se da ciertas condiciones.
+En la Figura \ref{mockup}, se presenta un mockup o estilo conceptual respecto a esta última propuesta para trabajo a futuro, donde se puede tener un espacio de visualización estadístico sin incluir todas las subespecies o subcategorías del phylum. Dicha pantalla podría incluirse a modo de pestaña en el UI general de la aplicación, permitiendo al taxónomo mantener la pestaña inicial con la comparación entre los dos árboles (modelo actual junto con los gráficos de InterRing) y añadir una segunda o tercer pestaña en donde se pueda hacer el importe de los distintos datasets para cada periodo del mismo phylum y visualizar a nivel estadístico cual o cuales son los años en donde se da ciertas condiciones.
 
 Cabe mencionar que dicho modelo debe contar con una validación rigurosa a la hora de importar los datos, ya que el taxónomo por error, en el importe de los datos puede cometer un error y agregar a la lista de archivos un phylum que no corresponde al que se quiere visualizar, dando espacio a que los resultados no sean del todo coherentes.
 
