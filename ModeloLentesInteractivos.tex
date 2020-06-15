@@ -615,7 +615,7 @@ de la estructuras jerárquicas.
   \caption{Ejemplo de visualización RSF. Tomado  de \cite{yang_ward_rundensteiner}}
 \end{figure}
 
-Es por esta razón que hemos optado por implementar un diseño de árbol radial [26] para representar los datos jerárquicos y debido a que la comparación de árboles es una tarea común realizada en árboles filogenéticos se podrá ver como todos los nodos de hoja o superiores se extienden hasta la parte inferior del gráfico, 
+Es por esta razón que hemos optado por implementar un diseño de árbol radial  \cite{sancho-study} para representar los datos jerárquicos y debido a que la comparación de árboles es una tarea común realizada en árboles filogenéticos se podrá ver como todos los nodos de hoja o superiores se extienden hasta la parte inferior del gráfico, 
 los nodos se colorean de acuerdo a su nivel facilitando que se pueda reorientar y reposicionar libremente. 
 
 
@@ -637,7 +637,10 @@ El sistema Diáfora proporcionará un acceso amigable al historial de cambio de 
 conocidas desde el escritorio, como doble clic, clic izquierdo o derecho. Por otro lado, las tareas de análisis de la información requieren de poca manipulación de widgets y diálogos de interfaz, facilitando la comprensión de los datos. 
 La nueva visualización de trabajo en el sistema Diáfora es individual, lo cual facilita que múltiples usuarios puedan tener acceso a distintas versiones de un árbol y trabajar de manera local. Logrando evitar que, si un miembro del área desea eliminar o modificar familias, los datos del resto de usuarios no se vea afectados.
 
+\subsection{Rendimiento: }
+Para casos prácticos, solo se usan dos lentes simultáneamente durante la exploración de datos. Sin embargo, para generar lentes para nodos superiores, se puede requerir una gran cantidad de lentes. Nuestra implementación se aplica a la visualización, y no al tamaño del conjunto de datos o la cantidad de capas de atributos que se representan.
 
+Para nuestra propuesta, generamos un conjunto de centros de lentes distribuidos de manera uniforme sobre la superficie del árbol radial en el cual el tiempo de respuesta no se ve afectado por la prueba de profundidad. 
 
 
 \section{Desarrollo del modelo de visualización en el sistema Diaforá}
@@ -896,8 +899,5 @@ Además, de distintos modelos estudiados durante la investigación de modelos de
 \bibliography{bibliography}
 
 
-
 % that's all folks
 \end{document}
-
-
