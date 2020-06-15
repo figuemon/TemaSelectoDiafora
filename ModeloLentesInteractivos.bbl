@@ -43,6 +43,22 @@ M.~Gleicher, ``Considerations for visualizing comparison,'' \emph{IEEE
   Transactions on Visualization and Computer Graphics}, vol.~24, no.~1, p.
   413–423, 2018.
 
+\bibitem{visual-focus}
+e.~a. Peter~Pirolli, ``Visual information foraging in a focus + context
+  visualization,'' 2001.
+
+\bibitem{lens-visual}
+e.~a. Geoffrey~Ellis, ``The sampling lens: Making sense of saturated
+  visualisations,'' 2005.
+
+\bibitem{graph-explore}
+e.~a. Yunhai~Wang, ``Structure-aware fisheye views for efficient large graph
+  exploration,'' 2019.
+
+\bibitem{phylo-scheme}
+F.~S. Tim~Dwyer, ``Optimal leaf ordering for two and a half dimensional
+  phylogenetic tree visualisation,'' 2006.
+
 \bibitem{tominski_gladisch_kister_dachselt_schumann_2016}
 C.~Tominski, S.~Gladisch, U.~Kister, R.~Dachselt, and H.~Schumann,
   ``Interactive lenses for visualization: An extended survey,'' \emph{Computer
@@ -116,5 +132,10 @@ J.~e.~a. Aldous, ``Graphs and applications:an introductory approach. 4ed.
 \bibitem{Kamada-graphs}
 K.~T. and K.~S., ``An algorithm for drawing general undirected graphs.
   information processing letters,'' 1989.
+
+\bibitem{avise_liu_2011}
+J.~C. Avise and J.-X. Liu, ``On the temporal inconsistencies of linnean
+  taxonomic ranks,'' \emph{Biological Journal of the Linnean Society}, vol.
+  102, no.~4, p. 707–714, 2011.
 
 \end{thebibliography}

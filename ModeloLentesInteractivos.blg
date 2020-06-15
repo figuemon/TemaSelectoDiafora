@@ -1,21 +1,21 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
 The top-level auxiliary file: ModeloLentesInteractivos.aux
-White space in argument---line 34 of file ModeloLentesInteractivos.aux
- : \citation{Diafor\IeC
- :                      {\'a}}
-I'm skipping whatever remains of this command
 The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bibliography.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in linne
+Warning--empty journal in visual-focus
+Warning--empty journal in lens-visual
+Warning--empty journal in graph-explore
+Warning--empty journal in phylo-scheme
 Warning--empty year in yang_ward_rundensteiner
 Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
 while executing---line 2403 of file IEEEtran.bst
@@ -48,45 +48,45 @@ Warning--empty journal in Aldous-graphs
 Warning--empty journal in Kamada-graphs
 
 Done.
-You've used 20 entries,
+You've used 25 entries,
             4087 wiz_defined-function locations,
-            918 strings with 10449 characters,
-and the built_in function-call counts, 9606 in all, are:
-= -- 807
-> -- 178
-< -- 28
-+ -- 90
-- -- 39
-* -- 391
-:= -- 1607
-add.period$ -- 40
-call.type$ -- 20
-change.case$ -- 20
+            938 strings with 11022 characters,
+and the built_in function-call counts, 11565 in all, are:
+= -- 976
+> -- 203
+< -- 31
++ -- 102
+- -- 45
+* -- 463
+:= -- 1957
+add.period$ -- 50
+call.type$ -- 25
+change.case$ -- 25
 chr.to.int$ -- 42
-cite$ -- 31
-duplicate$ -- 823
-empty$ -- 801
-format.name$ -- 47
-if$ -- 2188
+cite$ -- 40
+duplicate$ -- 1007
+empty$ -- 975
+format.name$ -- 54
+if$ -- 2631
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 139
-newline$ -- 89
-num.names$ -- 20
-pop$ -- 370
+int.to.str$ -- 25
+missing$ -- 168
+newline$ -- 104
+num.names$ -- 25
+pop$ -- 446
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 783
+skip$ -- 949
 stack$ -- 0
-substring$ -- 198
-swap$ -- 538
-text.length$ -- 14
+substring$ -- 221
+swap$ -- 642
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 20
-warning$ -- 11
-while$ -- 31
-width$ -- 22
-write$ -- 191
-(There were 11 error messages)
+type$ -- 25
+warning$ -- 15
+while$ -- 37
+width$ -- 27
+write$ -- 230
+(There were 10 error messages)
