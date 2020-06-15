@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex ModeloLentesInteractivos"] 1592189285 "ModeloLentesInteractivos.aux" "ModeloLentesInteractivos.bbl" "ModeloLentesInteractivos" 1592189297
+["bibtex ModeloLentesInteractivos"] 1592192025 "ModeloLentesInteractivos.aux" "ModeloLentesInteractivos.bbl" "ModeloLentesInteractivos" 1592192025
   "C:/Users/Natty/AppData/Roaming/MiKTeX/2.9/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "ModeloLentesInteractivos.aux" 1592189278 6960 53d6e38c50a4b9c4c7d6b2166aa3fa65 ""
+  "ModeloLentesInteractivos.aux" 1592191921 8031 ceba5065fbe06bac803fa186bff3e715 ""
   "bibliography.bib" 1592187025 5890 fc055097ca33672620139e564b5527be ""
   (generated)
-  "ModeloLentesInteractivos.bbl"
   "ModeloLentesInteractivos.blg"
-["pdflatex"] 1592189292 "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/ModeloLentesInteractivos.tex" "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.pdf" "ModeloLentesInteractivos" 1592189297
+  "ModeloLentesInteractivos.bbl"
+["pdflatex"] 1592192017 "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/ModeloLentesInteractivos.tex" "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.pdf" "ModeloLentesInteractivos" 1592192017
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -206,12 +206,13 @@
   "C:/Users/Natty/AppData/Roaming/MiKTeX/2.9/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/Natty/AppData/Roaming/MiKTeX/2.9/tex/latex/subfigure/subfigure.cfg" 1114307770 2114 42ba738bf6f1cec796106a69840777a4 ""
   "C:/Users/Natty/AppData/Roaming/MiKTeX/2.9/tex/latex/subfigure/subfigure.sty" 1114307770 14815 1d3da78e0f66f3c62133fbabffd13cf5 ""
-  "ModeloLentesInteractivos.bbl" 1592189285 5523 41b9d50c5d88a6399d8c4c5fc96cc19b "bibtex ModeloLentesInteractivos"
-  "ModeloLentesInteractivos.tex" 1592189227 62683 2015d7177c905918c77b50cbe0b3649c ""
-  "build/ModeloLentesInteractivos.aux" 1592189297 7775 40f82210daa940e92d5d397e17f6c2df "pdflatex"
-  "build/ModeloLentesInteractivos.out" 1592189297 1361 1ad19b76904ce33aa94b6bdbd5efa42d "pdflatex"
-  "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/ModeloLentesInteractivos.tex" 1592189227 62683 2015d7177c905918c77b50cbe0b3649c ""
-  "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.aux" 1592189297 7775 40f82210daa940e92d5d397e17f6c2df ""
+  "ModeloLentesInteractivos.bbl" 1592192016 5523 41b9d50c5d88a6399d8c4c5fc96cc19b "bibtex ModeloLentesInteractivos"
+  "ModeloLentesInteractivos.out" 1592191922 1487 5ac22dc4d3dcff41dc7389973cbf350c ""
+  "ModeloLentesInteractivos.tex" 1592192014 63105 a5b2207e076fe68fff74338baf022698 ""
+  "build/ModeloLentesInteractivos.aux" 0 -1 0 "pdflatex"
+  "build/ModeloLentesInteractivos.out" 0 -1 0 "pdflatex"
+  "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/ModeloLentesInteractivos.tex" 1592192014 63105 a5b2207e076fe68fff74338baf022698 ""
+  "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.aux" 1592192017 9 a94a2480d3289e625eea47cd1b285758 ""
   "images/Sparganophilidae_interring.png" 1592187025 214248 4ca8bbff18e9f83bf654e0b82f888b6d ""
   "images/extend_diafora.png" 1592187025 169907 ecf949bdc0403ce32b2c3c4d3bf150c6 ""
   "images/graph-theory.png" 1592187025 35462 6eb536822335e0b780f6bbcc43b9a96f ""
@@ -221,9 +222,9 @@
   "images/plots-lens.png" 1592187025 138679 c2e461c90aa2243240ef465fd49e745b ""
   "images/useCaseHaplotaxida.png" 1592187025 173881 14c996be60a2b79947df463f056af22c ""
   (generated)
-  "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.pdf"
+  "build/ModeloLentesInteractivos.aux"
   "build/ModeloLentesInteractivos.pdf"
   "build/ModeloLentesInteractivos.out"
-  "build/ModeloLentesInteractivos.log"
+  "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.pdf"
   "c:/Users/Natty/Desktop/TemaSelecto/TemaSelectoDiafora-1/build/ModeloLentesInteractivos.log"
-  "build/ModeloLentesInteractivos.aux"
+  "build/ModeloLentesInteractivos.log"
