@@ -1,7 +1,7 @@
-PWD c:\Users\Natty\Downloads\TemaSelectoDiafora
+PWD c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora
 INPUT C:\Users\Natty\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\ModeloLentesInteractivos.tex
-OUTPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\build\ModeloLentesInteractivos.log
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\ModeloLentesInteractivos.tex
+OUTPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.log
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeetran\IEEEtran.cls
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeetran\IEEEtran.cls
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ot1ptm.fd
@@ -99,6 +99,52 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex
@@ -251,28 +297,31 @@ INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\float\float.sty
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
-INPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
-OUTPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
+OUTPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+OUTPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.pdf
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+OUTPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\omsptm.fd
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\omsptm.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmrc7t.tfm
-OUTPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\build\ModeloLentesInteractivos.pdf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\Natty\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
@@ -286,11 +335,22 @@ INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmbi7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmrc7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT images\plots-lens.png
+INPUT .\images\plots-lens.png
+INPUT .\images\plots-lens.png
+INPUT .\images\plots-lens.png
+INPUT .\images\plots-lens.png
+INPUT images\graphs-exploration.png
+INPUT .\images\graphs-exploration.png
+INPUT .\images\graphs-exploration.png
+INPUT .\images\graphs-exploration.png
+INPUT .\images\graphs-exploration.png
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmb8r.tfm
@@ -301,7 +361,6 @@ INPUT .\images\interring.png
 INPUT .\images\interring.png
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmr7t.vf
 INPUT images\extend_diafora.png
 INPUT .\images\extend_diafora.png
 INPUT .\images\extend_diafora.png
@@ -317,12 +376,35 @@ INPUT .\images\useCaseHaplotaxida.png
 INPUT .\images\useCaseHaplotaxida.png
 INPUT .\images\useCaseHaplotaxida.png
 INPUT .\images\useCaseHaplotaxida.png
+INPUT images\Sparganophilidae_interring.png
+INPUT .\images\Sparganophilidae_interring.png
+INPUT .\images\Sparganophilidae_interring.png
+INPUT .\images\Sparganophilidae_interring.png
+INPUT .\images\Sparganophilidae_interring.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT ModeloLentesInteractivos.bbl
-INPUT ModeloLentesInteractivos.bbl
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT images\graph-theory.png
+INPUT .\images\graph-theory.png
+INPUT .\images\graph-theory.png
+INPUT .\images\graph-theory.png
+INPUT .\images\graph-theory.png
+INPUT images\interringCompare.png
+INPUT .\images\interringCompare.png
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\Natty\AppData\Roaming\MiKTeX\2.9\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT c:\Users\Natty\Downloads\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
+INPUT ModeloLentesInteractivos.bbl
+INPUT ModeloLentesInteractivos.bbl
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.aux
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
+INPUT c:\Users\Natty\Desktop\TemaSelecto\TemaSelectoDiafora\build\ModeloLentesInteractivos.out
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
