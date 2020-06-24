@@ -1,0 +1,92 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
+The top-level auxiliary file: ModeloLentesInteractivos.aux
+The style file: IEEEtran.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: bibliography.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in linne
+Warning--empty journal in visual-focus
+Warning--empty journal in lens-visual
+Warning--empty journal in graph-explore
+Warning--empty journal in phylo-scheme
+Warning--empty year in yang_ward_rundensteiner
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Roskov Y., Ower G., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., Nieukerken E. van, Zarucchi J., Penev L., eds." for entry catalogueoflife
+while executing---line 2403 of file IEEEtran.bst
+Warning--empty journal in aut-cloud-prov
+Warning--empty journal in virt-machines
+Warning--empty journal in artac-iac
+Warning--empty journal in morris-iac
+Warning--empty journal in guerr-iac
+Warning--empty journal in huttermann-iac
+Warning--empty journal in terraf-ansib
+Warning--empty journal in Aldous-graphs
+Warning--empty journal in Kamada-graphs
+
+Done.
+You've used 25 entries,
+            4087 wiz_defined-function locations,
+            938 strings with 11022 characters,
+and the built_in function-call counts, 11565 in all, are:
+= -- 976
+> -- 203
+< -- 31
++ -- 102
+- -- 45
+* -- 463
+:= -- 1957
+add.period$ -- 50
+call.type$ -- 25
+change.case$ -- 25
+chr.to.int$ -- 42
+cite$ -- 40
+duplicate$ -- 1007
+empty$ -- 975
+format.name$ -- 54
+if$ -- 2631
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 168
+newline$ -- 104
+num.names$ -- 25
+pop$ -- 446
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 949
+stack$ -- 0
+substring$ -- 221
+swap$ -- 642
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 25
+warning$ -- 15
+while$ -- 37
+width$ -- 27
+write$ -- 230
+(There were 10 error messages)
