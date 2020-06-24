@@ -441,10 +441,10 @@
 % in the abstract or keywords.
 \begin{abstract}
   Se presenta un modelo de visualización alternativo para la comparación de taxonomías biológicas,
-  que busca fortalecer el avance logrado en el sistema Diaforá\cite{sancho_diafora}. Permitiendo a los taxónomos
+  que busca fortalecer el avance logrado en el sistema Diaforá\cite{sancho_diafora}, permitiendo a los taxónomos
   enfocarse en aspectos importantes de los árboles de clasificación y manteniendo al mismo tiempo un mapa de la totalidad
   de los árboles de taxonomía que están analizando. 
-  A la vez, se realiza un análisis comparativo entre modelos de visualización con técnicas actuales de desarrollo de infraestructura para generar nuevos árboles o grafos con diferencias para una visualización de datos menos detallada que pueda perder al taxónomo de contexto, esto para una posible extensión del modelo presentado.
+  A la vez, se realiza un análisis comparativo entre modelos de visualización con técnicas actuales de desarrollo de infraestructura informática para generar nuevos árboles o grafos con diferencias para una visualización de datos menos detallada que pueda perder al taxónomo de contexto, esto para una posible extensión del modelo presentado.
   Dicha propuesta pretende ser evaluada por un panel de expertos en taxonomía, para verificar la eficacia de esta extensión al sistema
   Diaforá, de manera similar al análisis presentado en \cite{sancho-study}. 
 \end{abstract}
@@ -486,16 +486,15 @@ Visualización, Taxonomías biológicas, Diaforá, Enfoque y Contexto.
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-El problema descrito se deriva del trabajo realizado por los profesores Lilliana 
-Sancho Chavarría y Erick Mata Montero del ITCR, como parte  de su  investigación en la comparación
+El problema descrito se deriva del trabajo realizado por 
+Sancho Chavarría et al. como parte  de su  investigación en la comparación
 y visualización de taxonomías biológicas \cite{sancho_diafora}.
 Las taxonomías biológicas son estructuras donde las especies son clasificadas de
  acuerdo a un sistema jerárquico propuesto por Linnaeus en el siglo 18\cite{linne},
   y que incluye las categorías de dominio, reino, filo o división, clase, orden,
    familia, género y especie.
 La información de todos los seres vivientes conocidos se agrupa en
- árboles taxonómicos, que han sido creados y mantenidos por taxónomos a lo largo 
- del mundo durante siglos. La reciente revolución digital ha permitido que gran parte 
+ árboles taxonómicos, que han sido creados y mantenidos por taxónomos durante siglos. La reciente revolución digital ha permitido que gran parte 
  de esa información pueda  ser compartida y revisada por expertos.  
  Debido a la naturaleza dinámica de estos datos es común que los taxónomos se 
  enfrenten a distintas versiones de los datos que pueden ser corregidas y unificadas
@@ -504,11 +503,16 @@ La información de todos los seres vivientes conocidos se agrupa en
   de las taxonomías permitiría un avance significativo en la calidad y fiabilidad de
    las clasificaciones biológicas de los seres vivos.
    
-El manejo de información es cada vez más importante conforme las industrias, ciencias básicas y distintos mercados evolucionan, métodos de visualización brindan formas de visualizar mucha información sin realizar grandes inverciones de tiempo, buscamos brindar en un área específica de taxonomía una herramienta y modelo útil para que un taxónomo pueda comparar una especie específica de un periodo a otro.  
+El manejo de información es cada vez más importante conforme las industrias, ciencias básicas y distintos mercados evolucionan. Los métodos de visualización brindan formas de comprender información voluminosa en poco tiempo.
+Buscamos brindar una herramienta y modelo útiles para que los taxónomos puedan comparar dos versiones de una taxonomía.
    
 Cuando se busca una comparación de datos masiva como lo son las distintas taxonomías, se pueden encontrar múltiples formas de visualizar la información con distintas implementaciones gráficas, sin embargo no todas son útiles. Uno de los retos presentados fue investigar formas para visualizar las grandes taxonomías que permitieran mantener la coherencia de dichos datos y a la vez presentar al taxónomo una herramienta útil con la cual poder realizar comparaciones sin que le tome mucho tiempo.
 
-A la vez, se realizaron distintas comparaciones con trabajos relacionados recientes para manejo de grandes cantidades de datos, dando propuestas durante un período inicial de investigación, visualizando los dos árboles taxonómicos de distintas formas, llegando a distintas conclusiones sobre la preferencia por utilidad del modelo propuesto en el presente trabajo.
+A la vez, se realizaron distintas comparaciones con trabajos relacionados recientes para manejo de grandes cantidades de datos, dando propuestas durante un período inicial de investigación, visualizando los dos árboles taxonómicos de distintas formas, llegando a distintas conclusiones sobre la preferencia por utilidad del modelo propuesto en el presente trabajo. Este trabajo se enfocará 
+específicamente en las clasificaciones biológicas para la detección de diferencias y detalles relevantes 
+en una única pantalla.
+
+Este artículo esta organizado de la siguiente manera. En la sección II se describen trabajos relacionados en el área de la visualización de datos voluminosos. La sección III presenta un análisis del uso de las técnicas de lentes interactivos en la visualización de taxonomías biológicas. Posteriormente, la sección IV describe el diseño de  una extensión del sistema \emph{Diaforá} con una visualización InterRing para la visualización de las taxonomías biológicas. La sección V describe los detalles del  desarrollo de la extensión del sistema \emph{Diaforá}. Las secciones VI y VII describen la evaluación recibida del modelo propuesto y el trabajo futuro. Finalmente las secciones VIII y IX presentan la discusión y las conclusiones.
 
    %================== TRABAJOS RELACIONADOS
 
@@ -523,7 +527,7 @@ que a mayor escala se tienen como límite la capacidad cognitiva y perceptiva de
 Los trabajos relacionados en comparación de jerarquías de datos biológicos se centran en el estudio de árboles filogenéticos y taxonomías
 biológicas.
 
-Un enfoque mencionado en \cite{visual-focus} es utilizar navegadores de árboles hiperbólicos, podría tenerse en un árbol el detalle de un phylum y en cada conjunto de ramas cada una de las subespecies, sin embargo no es muy útil a la hora de querer comparar una taxonomía de un año específico con la misma taxonomía de otro año, ya que se terminaría teniendo dos árboles con ramas bastante grandes y no brindaría ningún beneficio respecto al modelo actual de visualización, a la vez que ubicar dos árboles tan grandes en una sola pantalla no seria conveniente. Utilizando este método con dos árboles donde uno se sobrepone al otro (un phylum del 2010 por ejemplo y el mismo phylum en el 2012) podría dar una visualización de las taxonomías más apropiada, ya que de esta forma de entrada se podría visualizar algún cambio en las ramas de los árboles al notarse que no son iguales, o por el contrario notar que no han habido cambios pronunciados en otras ramas.
+Un enfoque mencionado en \cite{visual-focus} es utilizar navegadores de árboles hiperbólicos, podría tenerse en un árbol el detalle de un taxón y en cada conjunto de ramas cada una de las subespecies, sin embargo no es muy útil a la hora de querer comparar una taxonomía de un año específico con la misma taxonomía de otro año, ya que se terminaría teniendo dos árboles con ramas bastante grandes y no brindaría ningún beneficio respecto al modelo actual de visualización, a la vez que ubicar dos árboles tan grandes en una sola pantalla no seria conveniente. Utilizando este método con dos árboles donde uno se sobrepone al otro (un phylum del 2010 por ejemplo y el mismo phylum en el 2012) podría dar una visualización de las taxonomías más apropiada, ya que de esta forma de entrada se podría visualizar algún cambio en las ramas de los árboles al notarse que no son iguales, o por el contrario notar que no han habido cambios pronunciados en otras ramas.
 
 Otro modelo de visualización para grandes cantidades de información, es tener un lente sobre una cuadrícula con puntos distribuidos que representen concentraciones de datos \cite{lens-visual}, esta técnica representa un modelo muy útil cuando se trate de profundizar en una única taxonomía de un año específico, sin embargo a la hora de realizar una comparación con otro año, el lente podría ser confuso a la hora de sacar diferencias entre subespecies.
 \begin{figure}[]
@@ -546,18 +550,18 @@ Se puede observar además un modelo de visualización tridimensional \cite{phylo
 
 Uno de los sentidos más importantes de los seres humanos es la visión. 
 Ésta es empleada para obtener la información visual del entorno, y en este caso específico la visualización de taxonomías se ha
- convertido en un medio para ayudar a las personas de diversos campos a obtener información relevante sobre los datos. 
+ convertido en un medio para ayudar a las personas de diversos campos a obtener información relevante sobre los datos organizados jerárquicamente. 
 
  \begin{itemize}
-  \item \textbf{La taxonomía:} es la ciencia que estudia los principios, métodos y fines de la clasificación. Este término se utiliza especialmente en biología para referirse a una clasificación ordenada y jerarquizada de los seres vivos y en educación para ordenar y diseñar los objetivos del aprendizaje. Científico sueco Carl von Linné
-  \item \textbf{La taxonomía en la biología:} clasifica de forma ordenada a los seres vivos. La clasificación, niveles o categorías taxononómicas son importantes ya que ayudan a evitar la confusión entre las especies al regirse por un sistema universal y consensual. De esta manera, sirve para que la comunidad científica pueda definir sin errores al ser vivo que pretenden estudiar o nombrar.
+  \item \textbf{La taxonomía:} es la ciencia que estudia los principios, métodos y fines de la clasificación. Este término se utiliza especialmente en biología para referirse a una clasificación ordenada y jerarquizada de los seres vivos y en educación para ordenar y diseñar los objetivos del aprendizaje. \cite{linne}
+  \item \textbf{La taxonomía en la biología:} clasifica de forma ordenada a los seres vivos\cite{linne}. La clasificación, niveles o categorías taxononómicas son importantes ya que ayudan a evitar la confusión entre las especies al regirse por un sistema universal y consensual. De esta manera, sirve para que la comunidad científica pueda definir sin errores al ser vivo que pretenden estudiar o nombrar.
 \end{itemize}
 
  Sin embargo, dado a que el tamaño de los datos aumenta constantemente,
   los enfoques de visualización tienen que resolver el problema de representaciones visuales 
   exponenciales que dificultan la visualización de contenido relevante en una sola imagen de visualización\cite{tominski_gladisch_kister_dachselt_schumann_2016}.
-Algunos investigadores como C. Tominski han tratado de abordar el desafío de la visualización con enfoque a través de exploraciones con grandes volúmenes 
-de datos. Una de las técnicas para resolver los problemas de visualización son los lentes interactivos,
+Algunos investigadores como Tominski et al. han tratado de abordar el desafío de la visualización con enfoque a través de exploraciones con grandes volúmenes 
+de datos. Una de las técnicas para resolver los problemas con información voluminosa son los lentes interactivos,
  una clase de métodos que permiten la exploración de datos con múltiples facetas. 
  Se busca con el uso de lentes interactivos una vista alternativa de los datos presentes en una área 
  específica de la pantalla, con el fin de enfatizar parte de esta información de una manera más clara para los usuarios\cite{tominski_gladisch_kister_dachselt_schumann_2016}.
@@ -566,7 +570,7 @@ específicamente en las clasificaciones biológicas para la detección de difere
 en una única pantalla, por ejemplo, los árboles filogenéticos que a diferencia de las categorizaciones 
 taxonómicas estudian las relaciones de parentesco entre las especies.
 Se han estudiado diferentes técnicas de visualización que permiten enfatizar las similitudes 
-y resaltar las diferencias existentes entre los árboles, como árboles de consenso y debido a que estos 
+y resaltar las diferencias existentes entre los árboles, como árboles de consenso\cite{inproceedings} y debido a que estos 
 árboles cuentan en promedio con más de 50 nodos es necesario la utilización de estrategias para ordenar 
 los árboles de manera automática entre estas se destacan la diferencia mínima de tripletas (MDT), y la
  semejanza máxima de ramas (MBS). Estos algoritmos buscan maximizar el alineamiento de las hojas de los 
@@ -598,9 +602,9 @@ los árboles de manera automática entre estas se destacan la diferencia mínima
  
  \subsection{Lentes Interactivos para Visualización de Taxonomías}
  La taxonomía tiene su origen en un vocablo griego que significa “ordenación”. Se trata de la ciencia de la clasificación que se aplica en la biología para la ordenación sistemática y jerarquizada de los grupos de animales o plantas.
- Es importante establecer además que la taxonomía está muy en relación con lo que se conoce por el nombre de sistemática. Esta puede definirse como la ciencia que se encarga de llevar a cabo el estudio de las relaciones de parentesco, también llamadas afinidades, 
+ Es importante establecer además que la taxonomía está relacionada con lo que se conoce por el nombre de sistemática. Esta puede definirse como la ciencia que se encarga de llevar a cabo el estudio de las relaciones de parentesco, también llamadas afinidades, 
  que se producen entre las distintas especies.
- En este paper nos enfocaremos en la taxonomía biológica, la cual forma parte de la biología sistemática, dedicada al análisis de las relaciones de parentesco entre los organismos. Una vez que se resuelve el árbol filogenético del organismo en cuestión y se conocen sus ramas evolutivas, 
+ En este artículo nos enfocaremos en la taxonomía biológica, la cual forma parte de la biología sistemática, dedicada al análisis de las relaciones de parentesco entre los organismos. Una vez que se resuelve el árbol filogenético del organismo en cuestión y se conocen sus ramas evolutivas, 
  la taxonomía se encarga de estudiar las relaciones de parentesco.
  La visión más extendida entiende a los taxones como clados (ramas del árbol filogenético, con especies emparentadas por un antepasado común) que ya fueron asignados a una categoría taxonómica.
 
@@ -626,17 +630,17 @@ los nodos se colorean de acuerdo a su nivel facilitando que se pueda reorientar 
 
 
 \begin{itemize}
-  \item \textbf{Árbol radial:} En un diagrama, donde las ideas son expuestas de una manera ordenada y sistemática permitiendo mostrar las relaciones entre ellas. 
-  El objetivo es inducir a construir estructuras mentales identificando ideas principales e ideas subordinadas según el orden lógico. Biólogo Greg Book.
+  \item \textbf{Árbol radial:} En un diagrama, donde las ideas son expuestas de una manera ordenada y sistemática permitiendo mostrar las relaciones entre ellas. \cite{book_keshary_2001}
+  El objetivo es inducir a construir estructuras mentales identificando ideas principales e ideas subordinadas según el orden lógico. Biól
 \end{itemize}
 
 
 Haciendo uso de una visualización de tipo \emph{InterRing}\cite{yang_ward_rundensteiner}, que emplea
 el concepto de distorción circular extendemos la capacidad actual del sistema \emph{Diaforá} para mantener el contexto
-de la estructura jerárquica que esta siendo desplegada en el árbol taxonómico. De esta manera se proporciona la capacidad de mover elementos de la interfaz libremente, permitiendo a los usuarios imponer su propia organización en los elementos taxonómicos, ayudando a los colaboradores a crear y mantener modelos mentales de un conjunto de datos que contiene variaciones a través de los años. 
+de la estructura jerárquica que está siendo desplegada en el árbol taxonómico. De esta manera se proporciona la capacidad de mover elementos de la interfaz libremente, permitiendo a los usuarios trabajar con su propia organización en los elementos taxonómicos, ayudando a los colaboradores a crear y mantener modelos mentales de un conjunto de datos que contiene variaciones a través de los años. 
 Al mover libremente el árbol taxonómico, los usuarios del sistema pueden imponer sus propias categorizaciones, evitando que se dé una recuperación tardía de los elementos o datos específicos. Por ejemplo, relacionar una versión del 2010 con otro árbol del 2012 podría requerir una búsqueda exhaustiva para localizar el cambio respectivo en la otra representación. 
 
-Implementando InterRing logramos resaltar datos en representaciones taxonómicas, ayudando a las personas cuando cambian entre datos grupales como especie, género o familias y más paralelo como las clases o el filo. 
+Implementando InterRing logramos resaltar datos en representaciones taxonómicas, ayudando a las personas cuando cambian entre datos grupales como especie, género o familias.
 
 \subsection{Interacción: }
 El sistema Diáfora proporcionará un acceso amigable al historial de cambio de datos. Las técnicas de interacción con el sistema Diaforá es a través de elementos comunes
@@ -646,7 +650,7 @@ La nueva visualización de trabajo en el sistema Diáfora es individual, lo cual
 \subsection{Rendimiento: }
 Para casos prácticos, solo se usan dos lentes simultáneamente durante la exploración de datos. Sin embargo, para generar lentes para nodos superiores, se puede requerir una gran cantidad de lentes. Nuestra implementación se aplica a la visualización, y no al tamaño del conjunto de datos o la cantidad de capas de atributos que se representan.
 
-Para nuestra propuesta, generamos un conjunto de centros de lentes distribuidos de manera uniforme sobre la superficie del árbol radial en el cual el tiempo de respuesta no se ve afectado por la prueba de profundidad. 
+Para nuestra propuesta, generamos un conjunto  de lentes distribuidos de manera uniforme sobre la superficie del árbol radial en el cual el tiempo de respuesta no se ve afectado por la prueba de profundidad. 
 
 \subsection{Tamaño: } Normalmente una visualización usará todo el espacio de pantalla disponible para mostrar los cambios visualización
 
@@ -689,10 +693,10 @@ resaltar y hacer más evidentes las diferencias entre versiones de una taxonomí
 Como detalles del modelo propuesto en la extensión del sistema Diaforá podemos listar:
 
 \begin{itemize}
-  \item \textbf{Gráficas InterRing:} Se agregan un par de gráficas circulares para representar los árboles taxonómicos de las
+  \item \textbf{Gráficas InterRing:} Se agregan dos de gráficas circulares para representar los árboles taxonómicos de las
   dos versiones de la taxonomía que se está comparando.
   \item  \textbf{Soporte interactivo:} Las gráficas además de representar visualmente los árboles taxonómicos permiten la navegación interactiva
-  por parte del usuario. Permitiendo escoger algún nivel específico en el árbol, lo que de manera automática se ve reflejado en la gráfica \emph{edge drawing}.
+  por parte del usuario, permitiendo escoger algún nivel específico en el árbol, lo que de manera automática se ve reflejado en la gráfica \emph{edge drawing}.
   \item \textbf{Etiquetas interactivas:} Utilizando el control \emph{Lens} se incluyen etiquetas interactivas que permiten saber cuantas diferencias y de que tipo existen
   en cada uno de los niveles del árbol taxonómico.
 \end{itemize}
@@ -707,8 +711,7 @@ En la figura \ref{haplotaxida} podemos apreciar la comparación entre la versió
   \label{haplotaxida}
 \end{figure*}
 
-Como es posible apreciar en el resumen de las etiquetas interactivas el órden \emph{Haplotaxida} tiene al menos 175 \emph{splits} o divisiones de los taxones del grupo.
-Y eso se refleja adecuadamente en las diferencias de la gráfica \emph{InterRing} en la parte inferior del área de comparación.
+Como es posible apreciar en el resumen de las etiquetas interactivas el órden \emph{Haplotaxida} tiene al menos 175 \emph{splits} o divisiones de los taxones del grupo y eso se refleja adecuadamente en las diferencias de la gráfica \emph{InterRing} en la parte inferior del área de comparación.
 
 
 Es importante destacar, la sincronía existente entre las gráficas \emph{InterRing} y el árbol taxonómico con \emph{edge drawing}, por lo que cuando el usuario 
@@ -810,7 +813,8 @@ Cabe mencionar que dicho modelo debe contar con una validación rigurosa a la ho
 
 \section {Discusión}
 El análisis taxonómico requiere de la visualización de grandes cantidades de datos correspondientes a las clasificaciones biológicas de los seres vivos, organizadas en el sistema 
-propuesto por \emph{Carl Linnaeus} durante el siglo \emph{XVIII} \cite{linne}.
+propuesto por \emph{Carl 
+aeus} durante el siglo \emph{XVIII} \cite{linne}.
 Este anális de los seres vivos  ha sido desarrollado por diferentes entidades y biólogos a lo largo del mundo, muchas veces recopilando información sobre las mismas especies
 y clasificandolas según su criterio, por lo que se ha encontrado con el problema de inconsistencias en las taxonomías biológicas que han sido creadas por 
 diferentes científicos a lo largo de la historia \cite{avise_liu_2011}.
@@ -844,23 +848,39 @@ Además, de distintos modelos estudiados durante la investigación de modelos de
 %\section{Conclusion}
 %The conclusion goes here.
 
+\subsection{Autoevaluación del trabajo realizado }
+Según los objetivos presentados en la propuesta orginal de este trabajo:
 
+\textbf{Objetivo general:}
+\begin{itemize}
+\item Creación de un modelo de visualización que permita la comparación de árboles taxonómicos manteniendo el contexto de la totalidad de la clasificación taxonómica.
+\end{itemize}
+\textbf{Objetivos específicos:}
+\begin{enumerate}
+\item Incorporar el uso de lentes interactivos para resaltar los detalles de las diferencias entre versiones de clasificaciones taxonómicas.
+\item Diseñar una visualización adicional para el sistema Diaforá que permita observar la totalidad del árbol taxonómico en una única pantalla.
+\item Implementar el modelo de visualización propuesto como una extensión del sistema Diaforá. 
+\item Validar la efectividad de la visualización propuesta con usuarios del sistema Diaforá
+\end{enumerate}
+Podemos determinar un nivel de completitud aceptable para cada uno de los mismos lo que detallamos en la siguiente tabla de autoevaluación:
+\begin{table}[]
+  \begin{tabular}{|m{1cm}|m{1cm}|m{4cm}|}
+  \hline
+  Objetivo & Porcentaje & Justificación \\
+  \hline \hline
+  1 & 10 & Se cumplió con el objetivo al presentar un mecanismo de visualización para resaltar las diferencias entre versiones de taxonomías.\\
+  \hline
+  2 & 10 & El sistema de visualización InterRing \cite{yang_ward_rundensteiner} permite condensar la totalidad del árbol taxonómico en una área reducida. \\
+  \hline
+  3 & 10 & Se implementó una extensión al sistema utilizando el mecanismo de visualización propuesto. El mismo se puede acceder mediante el url \url{https://diafora2.herokuapp.com/}. \\
+  \hline
+  4 & 9 & Se logró validar el modelo propuesto con un biólogo real y con uno de los autores del sistema Diaforá \cite{sancho_diafora}, sin embargo creemos que para dar como completo este objetivo es requerido
+  una evaluación más extensiva del modelo y  de sus beneficios. \\
+\hline
+\end{tabular}
+  \end{table}
 
-
-
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
-
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
+Como se observa  la mayoría de los objetivos propuestos se cumplió a cabalidad por lo que podríamos calificar el trabajo al que hace mención este artículo con un 9 de 10.
 
 
 %\appendices
